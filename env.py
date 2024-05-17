@@ -27,7 +27,7 @@ class GateEnv(gym.Env):
         self.action_space = spaces.Discrete(len(gates))
         # Example for using image as input (channel-first; channel-last also works):
         self.observation_space = spaces.Box(low=-1.0, high=1.0,
-                                            shape=(4,4), dtype=np.float64)
+                                            shape=(4,2), dtype=np.float64)
 
     def step(self, action):
         ...
